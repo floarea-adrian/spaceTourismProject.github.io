@@ -1,0 +1,126 @@
+/* --- google fonts  */
+
+/* Bellefair font */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+/* Barlow condesed font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+/* Barlow font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
+/* --- */
+
+* {
+    margin: 0;
+    padding: 0 ;
+}
+
+
+
+ body {
+    background-color: rgba(17, 18, 30, 0.913);
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    /* overflow: hidden; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+}
+
+
+/* ---------------helpers----------------- */
+
+.d-flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column  ;
+}
+
+
+.center-vertical {
+    align-items: center;
+}
+
+.center-horizontal {
+    justify-content: center;
+}
+
+.inter-space {
+    justify-content: space-between;
+}
+
+.evenly {
+    justify-content: space-evenly;
+}
+
+
+/* ///////////////////////////////////////////////////// */
+
+/* Common code for al html  */
+
+/* /////////////////////////////////////////////////////// */
+
+
+li {
+    list-style-type: none;
+    cursor: pointer
+}
+
+
+.mainContainer{
+    margin: auto;
+    margin-top: 70px
+    
+}
+
+.subTitle-nb{
+    color: rgb(80,83,91);
+    font-weight: 700;
+    margin-right: 10px
+    
+}
+
+.mainContainer h4{
+    
+    margin-bottom: 60px;
+    margin-left: 145px;
+}
+
+
+h4 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    
+}
+
+.mainContainer h3 {
+    font-size: 50px;
+    font-family: 'Bellefair',serif;
+    text-transform: uppercase;
+}
+
+.mainContainer h2{
+    
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Bellefair',serif;
+
+}
+
+
+
+

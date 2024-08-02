@@ -1,0 +1,141 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+.contain{
+  height: 80vh;
+  margin: 0 10% 0% 10%;
+}
+
+.text-Container{
+  max-width: 485px
+}
+.text-Container h1 {
+  font-size: 150px;
+  margin: 20px 0 20px 0;
+  letter-spacing: 15px;
+  font-family: "Bellefair", serif;
+}
+
+.text-Container h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #D0D6F9;
+  letter-spacing: 3px;
+}
+
+.text-Container p {
+  color: #D0D6F9;
+  line-height: 30px;
+}
+
+ button{
+  padding: 100.7px  40px ;
+  /* background-color: white; */
+  border: none;
+  border-radius: 75%;
+  margin-top: 150px;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Bellefair", serif;
+  letter-spacing: 2px;
+ cursor: pointer;
+ animation-name: border;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ /* animation-direction: reverse; */
+}
+
+@keyframes border {
+   0% {outline: 70px solid rgb(11,13,23,0.4); background-color: white;color: black;}
+   100%{outline: 0px solid rgb(11,13,23,0.4); background-color: transparent;color: white;}  
+}
+
+
+button:hover{
+  animation-name:line;
+  animation-duration:2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  box-shadow: 0px 0px 10px 20px rgba(164, 126, 252, 0.489) inset ;
+  background-color: rgba(245, 245, 245, 0.433);
+
+}
+
+@keyframes line {
+  0% {outline: 0px solid rgb(11,13,23,0.4);}
+   100%{outline: 60px solid rgb(11,13,23,0.4);}  
+}
+
+
+/* style for responsive */
+/* ////////// */
+/* Media Query for tablet  */
+
+@media screen and (max-width:992px) {
+  .contain{
+    flex-direction: column !important;
+    margin-top: 50px;
+    justify-content:flex-start!important;
+  }
+
+  .text-Container{
+    text-align: center;
+  }
+
+  .text-Container h4 {
+    font-size: 20px;
+  }
+
+  .text-Container h1 {
+    font-size: 100px;
+  }
+
+  .text-Container p {
+    font-size: 15px;
+  }
+
+  button {
+    padding: 50px 20px;
+    font-size: 15px;
+    margin-top: 50px;
+  }
+
+  @keyframes border {
+    0% {outline: 40px solid rgb(11,13,23,0.4); background-color: white;color: black;}
+    100%{outline: 0 solid rgb(11,13,23,0.4); background-color: transparent;color: white;}  
+ }
+
+  @keyframes line {
+    0% {outline: 0 solid rgb(11,13,23,0.4);}
+    100%{outline: 30px solid rgb(11,13,23,0.4);}  
+  }
+ 
+}
+
+
+@media screen and (max-width:767px) {
+  .text-Container{
+    text-align: center;
+  }
+
+  .text-Container h4 {
+    font-size: 15px;
+  }
+
+  .text-Container h1 {
+    font-size: 60px;
+  }
+
+  .text-Container p {
+    font-size: 15px;
+  }
+
+  button {
+    
+    margin-top: 70px ;
+  }
+
+}

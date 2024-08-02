@@ -1,0 +1,187 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.contain > div {
+    width: 445px;
+}
+
+.leftSide-contain img{
+    width: 350px;
+    height: 350px;
+}
+
+h2{
+    margin: 25px 0;
+}
+
+.leftSide-contain{
+    margin-left: 60px;
+}
+
+.rightSide-contain {
+    margin-top: -50px;
+}
+
+.secondNavbar {
+  
+    background: linear-gradient(
+    to right,
+    #00affa 25%,
+    #0190cd 30%,
+    #7953cd 70%,
+    #c44ada 80%
+    /* #00affa 100% */
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: color 5s ease-out infinite alternate ;
+
+}
+@keyframes color {
+    0% {background-position: 0 50% }
+    50% { background-position:100% 50%;}
+    100% {background-position: 50% 0%;}
+}
+
+.secondNavbar li {
+    width: auto;
+    text-align: center;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.rightSide-contain ul li .underline {
+    height: 3px;
+	background-color: transparent;
+	width: 0%;
+    transition: width 0.2s, background-color 0.5s;
+	margin: 0 auto;
+}
+a {
+    outline: none;
+    font-size: 18px;
+}
+
+.active-link .underline{
+	width: 100%;
+	background-color: white;
+}
+
+.rightSide-contain ul li.active-link .underline {
+	width: 100%;
+	background-color: white;
+}
+
+.rightSide-contain ul li:hover .underline {
+	background-color: grey;
+     transition: width 0.5s, background-color 0.5s;
+	 width: 100%;
+}
+
+.rightSide-contain ul li:active .underline {
+	transition: none;
+	background-color: rgba(255,255,255,0.76);
+}
+
+
+.planetDescription, .secondNavbar a, .distanceInformation h5{
+    color: #D0D6F9;
+    line-height: 30px;
+}
+
+.separateLine {
+    width: 100%;
+    height: 1px;
+    background-color: #383B4B;    
+    margin: 20px 0 10px 0;
+}
+
+.distanceInformation p{
+    font-size: 25px;
+    font-family: 'bellefair', serif;
+}
+
+
+@media screen and (max-width:992px) {
+ 
+    .mainContainer{
+       max-width: 450px;
+       margin: 0 auto;
+       text-align: center;
+       margin-top: 30px !important;
+    }
+
+    .mainContainer h4 {
+        font-size: 15px;
+        margin-bottom: 40px !important;
+        text-align: left;
+        margin-left: 0 !important;
+    }
+    .contain{
+        flex-direction: column;
+    }
+
+    .leftSide-contain img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .leftSide-contain {
+        margin: 0 auto;
+    }
+
+    .contain > div {
+        width: 100%;
+    }
+
+    .secondNavbar {
+        justify-content: center;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .secondNavbar a {
+        font-size: 15px;
+    }
+
+    .mainContainer h2 {
+        font-size: 50px !important;
+        margin: 10px 0 ;
+    }
+
+    .planetDescription {
+        font-size: 15px;
+    }
+
+    .distanceInformation  {
+        font-size: 15px;
+        justify-content:space-evenly !important;
+    }
+
+    .distanceInformation p {
+        font-size: 20px;
+    }
+    
+
+}
+
+
+@media  screen and (max-width: 767px) {
+    .mainContainer h4 {
+       text-align: center;
+       margin-top: -25px;
+    }
+
+    .contain {
+        margin: 0 30px;
+    }
+
+    .distanceInformation {
+        flex-direction: column;
+    }
+}
