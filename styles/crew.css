@@ -84,7 +84,7 @@ body, html {
 	}
 
 	.leftSide-content h3 {
-		font-size: 30px;
+		font-size: 30px !important;
 		margin-bottom: 10px;
 	}
 
@@ -96,7 +96,7 @@ body, html {
 	}
 
 	.rightSide-content img {
-		height: 300px;
+		height: 270px;
 		margin-top: 0px;
 	}
 
@@ -110,7 +110,11 @@ body, html {
 	.menu-link {
 		width: 10px;
 		height: 10px;
-		/* background-color: grey; */
+		background-color: grey;
+	}
+
+	.active-link {
+		background-color: white !important;
 	}
 
 
@@ -124,7 +128,7 @@ body, html {
 @media  screen and (max-width: 767px) {
 
 	.mainContainer{
-		margin-top: 0;
+		margin-top: 0 !important;
 	}
 
 	.mainContainer h4 {
