@@ -61,9 +61,9 @@ function techSwitch(index) {
         }
     }
     
-    window.onload = updateImage;
-    window.onresize = updateImage;
-    window.addEventListener("click", updateImage)
+    window.onload = updateImage();
+    window.onresize = updateImage(); 
+    window.addEventListener("click", updateImage())
 }
 
 
