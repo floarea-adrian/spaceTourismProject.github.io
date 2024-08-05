@@ -85,12 +85,19 @@ thirdPage.addEventListener('click', () => {
 
 
 const storedActiveLinkId = localStorage.getItem('activeLinkId')
+const defaultLinkId = 'pageOne';
+
 
 if(storedActiveLinkId){
     const storedActiveLink = document.getElementById(storedActiveLinkId);
     if(storedActiveLink) {
         storedActiveLink.classList.add('active-link');
+    } else {
+        document.getElementById(defaultLinkId).classList.add('active-link');
     }
+} else{
+    document.getElementById(defaultLinkId).classList.add('active-link');
+
 }
 
 const navLinks = document.querySelectorAll('.menu-link');

@@ -88,13 +88,18 @@ dotFour.addEventListener('click' , () => {
 
 
 const storedActiveLinkId = localStorage.getItem('activeLinkId');
+const defaultLinkId = 'firstDot'
         
 // If there is a stored active link, add the 'active-link' class to it
 if (storedActiveLinkId) {
     const storedActiveLink = document.getElementById(storedActiveLinkId);
     if (storedActiveLink) {
         storedActiveLink.classList.add('active-link');
+    } else {
+        document.getElementById(defaultLinkId).classList.add('active-link');
     }
+} else {
+    document.getElementById(defaultLinkId).classList.add('active-link');
 }
 
 // Get all elements with class 'menu-link'

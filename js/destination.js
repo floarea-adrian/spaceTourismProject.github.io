@@ -105,13 +105,19 @@ titanPath.addEventListener('click' , () => {
 
     
         const storedActiveLinkId = localStorage.getItem('activeLinkId');
+        const defaultLinkId = 'moon';
         
         // If there is a stored active link, add the 'active-link' class to it
         if (storedActiveLinkId) {
             const storedActiveLink = document.getElementById(storedActiveLinkId);
             if (storedActiveLink) {
                 storedActiveLink.parentElement.classList.add('active-link');
+            } else {
+                document.getElementById(defaultLinkId).parentElement.classList.add('active-link');
             }
+        } else {
+            document.getElementById(defaultLinkId).parentElement.classList.add('active-link');
+
         }
     
         // Get all elements with class 'nav-link'
@@ -134,9 +140,3 @@ titanPath.addEventListener('click' , () => {
             });
         });
     
-
-//     $('.nav-link').on('click', function() {
-// 	$('.active-link').removeClass('active-link');
-// 	$(this).addClass('active-link');
-// }); 
-
